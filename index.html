@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>player</title>
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./app.js"></script>
+</head>
+
+<body>
+    <nav>NAVEGAÇÃO</nav>
+    <header>
+        <aside>MENU LATERAL</aside>
+        <article>ARTIGOS
+
+        </article>
+    </header>
+
+    <main>
+
+        <section>
+
+            <div class="principal">
+                <div class="primeira">
+
+
+                    <button onclick="left()">esquerda</button>
+                    <button onclick="right()">direita</button>
+                    <button onclick="middle()">centro</button>
+                    <button onclick="circle()">minimizar</button>
+
+
+                </div>
+                <div class="segunda">
+
+                    <!-- --------------------------------------------------------------------------- -->
+                    <div draggable="true" class="canvas" ontouchmove="dragElement()">
+                        <video class="video" src="./pexels-wolfgang-langer-5974160.mp4"
+                            style="min-width:90%; max-width: 420px;min-height:170px; max-height: 340px;"></video>
+                        <canvas class="canvas1" id="canvas"></canvas>
+                        <button id="play" onclick="play()" class="play"><img src="./botao-play.png" alt="play"></button>
+                        <button id="close" onclick="circle()" class="close"><img src="./botao-fechar.png"
+                                alt="pause"></button>
+                        <button id="pause" onclick="pause()" class="pause"><img src="./botao-de-pausa.png"
+                                alt="pause"></button>
+
+                    </div>
+                    <!-- --------------------------------------------------------------------------- -->
+
+
+
+                </div>
+                <div class="terceira">
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>RODAPÉ</footer>
+
+
+
+</body>
+
+</html>
