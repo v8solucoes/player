@@ -4,7 +4,7 @@ const canvas = document.getElementById("canvas");
 const image = new Image();
 image.src = 'https://picsum.photos/420/320';
 image.onload = drawImage;
-
+//teste
 function drawImage() {
     canvas.width = image.naturalWidth;
     canvas.height = image.naturalHeight;
